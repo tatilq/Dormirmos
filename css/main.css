@@ -21,17 +21,17 @@ header{
     background-attachment: fixed;
     background-size: cover;  
 }
-.degradado{ background-color: rgba(20,15,245,0.5); }
+.degradado{ background-color: rgba(178,34,34,0.4); }
 .hero .frase{ margin: 0 auto; padding:100px; width: 70%; color: white;}
 .hero .frase h2{ font-size: 40px;}
-.hero .dormimos{ background-color:rgba(40,63,235,0.6); margin:0 -15px; color: white; padding: 50px 0px; }
+.hero .dormimos{ background-color:rgba(220,20,60,0.8); margin:0 -15px; color: white; padding: 50px 0px; }
 .dormimos select{ width: 50%; margin: 0 auto; text-align: center; }
 .dormimos label{ font-size: 18px; margin-bottom: 15px; }
 
 .logo{  width: 30%; }
-.btn_menu{ background: rgba(20,15,245,0.9); border:2px solid black; }
+.btn_menu{ background: rgba(139,0,0,0.4); border:2px solid black; }
 #salida{ color: white; width: 60%; margin: 0 auto; background: rgba(60,80,80,0.5); border:2px solid black; }
 /*ESTA  ES LA SECCION DEL FOOTER*/
 footer{padding: 30px 0;}
-footer .icon_footer{ font-size: 40px;color: rgb(20,15,245);}
-footer .correo, footer .phone{color: rgb(20,15,245);}
+footer .icon_footer{ font-size: 40px;color: rgb(220,20,60);}
+footer .correo, footer .phone{color: rgb(220,20,60);}
