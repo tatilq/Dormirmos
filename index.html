@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet icon" href="dormir.ico">
+
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/queries.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -17,29 +17,39 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2 text-center">
+			<div class="col-md-8 col-md-offset-2">
 				<h1>¿Dormimos?</h1>
+				<p>Completa el formulario</p>
 				<hr>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-5 col-md-offset-2">
 				<div class="form-group">
-					<label for="exampleInputEmail1">Puntaje obtenido por tu Squad:</label>
-					<input type="email" class="form-control" id="puntos_Squad" placeholder="0">
+					<label for="dia">¿Qué día es hoy?</label>
+					<select class="form-control" id="dia">
+						<option value="1">Lunes</option>
+						<option value="2">Martes</option>
+						<option value="3">Miércoles</option>
+						<option value="4">Jueves</option>
+						<option value="5">Viernes</option>
+						<option value="6">Sábado</option>
+						<option value="7">Domingo</option>
+					</select>
 				</div>
 				<div class="form-group">
-					<label for="exampleInputPassword1">Maxima Cantidad de Puntos del Sprint:</label>
-					<input class="form-control" id="max_Puntos" placeholder="0">
+					<label for="vacaciones">¿Estás de vacaciones?</label>
+					<select class="form-control" id="vacaciones">
+						<option value="1">Si</option>
+						<option value="2">No</option>
+					</select>
 				</div>
-				<button onclick="calcular()" class="btn btn-default">Calcular</button>
+				<button onclick="calcular()" class="btn btn-default">Evaluar</button>
 			</div>
 			<div class="col-md-3 text-center">
-				<h4 >Porcentaje Total del Squad</h4>
-				<div id="salida" style="font-size:40px;" class="text-center">0</div>
-				<div id="mensajes" style="font-size:25px;" class="text-center"></div>
-			</div>
-		</div>
+				<h4>Mensaje</h4>
+				<div id="salida" style="font-size:40px;" class="text-center">-</div>
+				<h4>Podrás dormir</h4>
 	</div>
 	<!--SCRIPT DE ANIMACIONES-->
     <script src="js/particles.js"></script>

@@ -1,40 +1,33 @@
 
-var puntosSquad = document.getElementById("puntos_Squad");
-var maxPuntos = document.getElementById("max_Puntos");
-var divSalida = document.getElementById("salida");
-var porcentaje_Squad = 0;
-
 function calcular()
 {
-	var  valorpuntosSquad=puntosSquad.value;
-	var  valormaxPuntos=maxPuntos.value;
+	var vacation = document.getElementById("vacaciones").value;
+	var weekday = parseInt(document.getElementById("dia").value);
 
-	porcentaje_Squad = (100*parseFloat(puntosSquad.value)) / parseFloat(maxPuntos.value);
-	var valorPorcentajeSquad= parseFloat(porcentaje_Squad);
+	var isVacation = true;
+	var isWeekday = false;
 
-	if(valorpuntosSquad == "" || valormaxPuntos == "" )
+	var salida = document.getElementById("salida");
+
+	if(vacation == "2")
 	{
-
-		salida.innerHTML = "0.00";
-		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">No se ingresaron valores</div>';
+		isVacation = false;
 	}
-	else if( valorPorcentajeSquad > 100  ||  valorPorcentajeSquad < 0)
+
+	if(weekday < 6)
 	{
-		salida.innerHTML = "0.00";
-		document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">Se ingresaron valores incorrectos</div>';
+		isWeekday = true;
 	}
-	else 
+
+	if(isVacation)
 	{
-		if (valorPorcentajeSquad >= 80 ) 
+		salida.innerHTML = "1";
+	}else{
+		if(isWeekday)
 		{
-			salida.innerHTML = valorPorcentajeSquad.toFixed(2)+"%";
-			document.getElementById("mensajes").innerHTML = '<div class="alert ">Muy bien Squad</div>';
-		}
-		else
-		{
-			salida.innerHTML = valorPorcentajeSquad.toFixed(2)+"%";
-			document.getElementById("mensajes").innerHTML = '<div class="alert alert-danger">Pueden hacerlo mejor</div>';
+			salida.innerHTML = "0";
+		}else{
+			salida.innerHTML = "1";
 		}
 	}
-
 }
