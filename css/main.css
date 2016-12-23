@@ -1,35 +1,45 @@
 body
 {
-	font-family: 'Irish Grover', cursive;
-	/*font-family: 'Permanent Marker', cursive;*/7
+	font-family: cursive;
 }
-#particles-js {
+.form
+{ 
+    border:2px solid black; 
+    background-color:rgba(100,20,60,0.5); 
+    padding: 50px 0px; 
+    border-radius: 5px 30px 45px 60px;
+    -moz-border-radius: 5px 30px 45px 60px;
+    -webkit-border-radius: 15px;
+}
+#particles-js 
+{
     width: 100%;
     height: 100%auto;
     position: fixed;
-
 }
 /*ESTA ES LA SECCION DEL HEADER*/
 
 header{
+    
+    background: url('../img/dormir.jpg');
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-    background: url('../img/background.jpg');
-    background-position: center center;
+    background-position:  center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;  
+    background-size: contain;  
 }
-.degradado{ background-color: rgba(178,34,34,0.4); }
-.hero .frase{ margin: 0 auto; padding:100px; width: 70%; color: white;}
-.hero .frase h2{ font-size: 40px;}
-.hero .dormimos{ background-color:rgba(220,20,60,0.8); margin:0 -15px; color: white; padding: 50px 0px; }
+.degradado{ background-color:rgba(100,20,60,0.5); }
+.hero .frase{ margin: 0 auto; padding:30px; width: 50%; color: white;}
+.hero .frase h2{ font-size: 50px;}
+.hero .dormimos{  margin:0 -15px; color: white; padding: 80px 0px; }
 .dormimos select{ width: 50%; margin: 0 auto; text-align: center; }
 .dormimos label{ font-size: 18px; margin-bottom: 15px; }
 
+
 .logo{  width: 30%; }
-.btn_menu{ background: rgba(139,0,0,0.4); border:2px solid black; }
+.btn_menu{ background: rgba(139,0,0,0.8); border:2px solid black; }
 #salida{ color: white; width: 60%; margin: 0 auto; background: rgba(60,80,80,0.5); border:2px solid black; }
 /*ESTA  ES LA SECCION DEL FOOTER*/
 footer{padding: 30px 0;}
