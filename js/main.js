@@ -17,6 +17,7 @@ function calcular()
 	if(weekday < 8)
 	{
 		isWeekday = true;
+
 	}
 
 	if(isVacation)
